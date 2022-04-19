@@ -43,19 +43,17 @@ function List() {
 
   return (
     <div>
-      <h1>Todo List</h1>
-      <div className="inputs">
-        <input
-          type="text"
-          value={title}
-          onChange={(event) => setTitle(event.target.value)}
-        />
-        <DatePicker onChange={setDate} value={date} />
-        <input type="button" value="Add" onClick={onSubmit} />
-        {todo.map((data) => (
-          <Item key={data.id} itemData={data} removeItem={removeItem} />
-        ))}
-      </div>
+      <h1 className="header">Todo List</h1>
+      <input
+        type="text"
+        value={title}
+        onChange={(event) => setTitle(event.target.value)}
+      />
+      <DatePicker onChange={setDate} value={date} />
+      <input type="button" value="Add" onClick={onSubmit} />
+      {todo.map((data) => (
+        <Item key={data.id} itemData={data} removeItem={removeItem} />
+      ))}
     </div>
   );
 }
