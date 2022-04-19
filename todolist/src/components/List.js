@@ -6,6 +6,9 @@ import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { collection, getDocs, deleteDoc } from "firebase/firestore";
 
+const WORKER_LINK =
+  "https://us-central1-automation-nk.cloudfunctions.net/ical?url=";
+
 function List() {
   let [title, setTitle] = useState("");
   let [date, setDate] = useState(new Date());
