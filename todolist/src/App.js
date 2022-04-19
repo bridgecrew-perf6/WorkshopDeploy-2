@@ -8,9 +8,8 @@ function App() {
   const [user] = useAuthState(auth);
   return (
     <div>
-      {/* {!user && <Login />}
-      {user && <List />} */}
-      <List />
+      {!user && <Login />}
+      {user && <List />}
     </div>
   );
 }
