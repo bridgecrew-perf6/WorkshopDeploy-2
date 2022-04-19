@@ -1,7 +1,7 @@
 import "./App.css";
 import List from "./components/List";
 import Login from "./components/Login";
-import { auth } from "./database";
+import { auth } from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 function App() {
