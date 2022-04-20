@@ -9,6 +9,12 @@ import { getAuth } from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   //YOUR FIREBASE CONFIG HERE
+  apiKey: "AIzaSyACBOCgYOcBD9jrethXGc9UB0BJfk5gW6g",
+  authDomain: "todolist-f07fe.firebaseapp.com",
+  projectId: "todolist-f07fe",
+  storageBucket: "todolist-f07fe.appspot.com",
+  messagingSenderId: "716109897572",
+  appId: "1:716109897572:web:6d15bdfd3023e88e282471",
 };
 
 // Initialize Firebase
